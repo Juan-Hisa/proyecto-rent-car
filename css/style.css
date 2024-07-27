@@ -1,0 +1,866 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: "Barlow", sans-serif; */
+
+body{
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #1d1d1e;
+    max-width: 1500px;
+    margin: auto;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* --------- HEADER STYLE ----------- */
+header{
+    background-color: #232328;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-weight: 600;
+    color: #e2e2e2;
+    padding: 0;
+}
+
+.nav__button{
+    display: none;
+}
+
+.header-navbar li a{
+    color: #e2e2e2;
+}
+
+.header-navbar li a:hover{
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.header-navbar li { 
+    margin: 0 5px;
+}
+
+.header-navbar{
+    display: flex;
+    margin-right: 100px;
+}
+.login-box div a{
+    display: flex;
+    justify-items: center;
+    color: #e2e2e2;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+.login-box div{
+    border-left: 2px solid #49444b;
+    margin-right: 2px;
+}
+.login-box div a:hover{
+    color: #399D4F;
+    border-radius: 100%;
+}
+
+.login-box{
+    display: flex;
+}
+
+.material-symbols-outlined{
+    display: none;
+    cursor: pointer;
+}
+#menu-toggle{
+    display: none;
+}
+
+/* ---------- MAIN STYLE ---------- */
+
+/* --------- INDEX STYLE ---------- */
+
+.main-index{
+    color: #e2e2e2;
+    margin: 2rem;
+}
+.main-index section{
+    background-color: #232328;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.main-index section h2{
+    color: #E2BF42;
+    border-bottom: 2px solid #E2BF42;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.main-index .section-aboutUs h2{
+    color: #e2e2e2;
+    border-bottom: none;
+}
+
+.main-index section img{
+    width: 20rem;
+    height: 16.25rem;
+    margin: 20px 0;
+    border-radius:0px 20px 20px 20px;
+    box-shadow: 4px -2px 4px 0px #494949;
+}
+.main-index section div{
+    margin: 10px 0;
+}
+
+.aboutUs-p{
+    max-width: 21.875rem;
+    align-content: center;
+    padding-bottom: 1.25rem;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.main-index section div p{
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+.main-index .rent-button{
+    margin: 10px;
+}
+.main-index .rent-button button{
+    all: unset;
+    background-color: #399D4F;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.main-index .rent-button button a{
+    color: #e2e2e2;
+}
+
+.main-index .rent-button button:hover{
+    background-color: #399D4F77;
+    border: 1px solid #E2BF42;
+}
+
+
+.main-index .rent-button a{
+    text-decoration: none;
+    color: #e2e2e2;
+}
+
+.main-index .rent-button .rent-information:hover{
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+
+
+/* ----------- CARS STYLE ----------- */
+
+.main-cars{
+    background-color: #232323;
+    color: #e2e2e2;
+    margin: 2rem;
+    padding: 1rem .5rem;
+    border-radius: 10px;
+}
+
+.main-cars h2{
+    text-align: center;
+}
+
+.section-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.section-cards article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.car-card1 img,.car-card2 img, .car-card3 img, .car-card4 img, .car-card5 img, .car-card6 img, .car-card7 img, .car-card8 img{
+    width: 60%;
+    height: 60%;
+    object-fit:cover;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.car-card1, .car-card2,.car-card3,.car-card4,.car-card5,.car-card6,.car-card7,.car-card8{ 
+    padding: 0.75rem;
+    color: #e2e2e2;
+    background-color: #49444b;
+    margin: .9375rem;
+    border-radius: 5px;
+}
+
+.car-card1 h3, .car-card2 h3, .car-card3 h3, .car-card4 h3, .car-card5 h3, .car-card6 h3, .car-card7 h3, .car-card8 h3{
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.car-card1 div p, .car-card2 div p, .car-card3 div p, .car-card4 div p, .car-card5 div p, .car-card6 div p, .car-card7 div p, .car-card8 div p{
+    margin: 5px;
+    text-align: center;
+}
+
+.car-card1 div button, .car-card2 div button, .car-card3 div button, .car-card4 div button, .car-card5 div button, .car-card6 div button, .car-card7 div button, .car-card8 div button{
+    all: unset;
+    margin: .3125rem;
+    background-color: #399D4F99;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 6.25rem;
+    margin-top: 1.25rem;
+}
+
+.car-card1 div button a, .car-card2 div button a, .car-card3 div button a, .car-card4 div button a, .car-card5 div button a, .car-card6 div button a, .car-card7 div button a, .car-card8 div button a{
+    text-decoration: none;
+    color: #e2e2e2;
+}
+
+.car-card1 div button:hover, .car-card2 div button:hover, .car-card3 div button:hover, .car-card4 div button:hover, .car-card5 div button:hover, .car-card6 div button:hover, .car-card7 div button:hover, .car-card8 div button:hover{
+    background-color: #399D4F;
+}
+
+.car-card1 div a, .car-card2 div a, .car-card3 div a, .car-card4 div a, .car-card5 div a, .car-card6 div a, .car-card7 div a, .car-card8 div a{
+    text-decoration: none;
+    color: #e2e2e2;
+}
+
+.car-info:hover{
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+/* ----- CONTACT PAGE ------- */
+
+.main-contact{
+margin: auto;
+}
+
+.box-container__contact{
+    margin: 1.875rem;
+    background-color: #232328;
+    color: #e2e2e2;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-tittle{
+    margin: 10px 0;
+}
+
+.form-p{
+    text-align: justify;
+    max-width: 34.375rem;
+    margin: 10px;
+}
+
+.box-form{
+    background-color: #3d3a3e;
+    border-radius: 5px;
+    padding: 0 30px;
+}
+
+.contact-form{
+    margin: auto;
+    padding: 1.25rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas: 
+        "name surname "
+        "phone email "
+        "message message ";
+    grid-gap: 20px;
+}
+.name{
+    grid-area: name;
+}
+
+.surname{
+    grid-area: surname;
+}
+
+.phone{
+    grid-area: phone;
+}
+
+.email{
+    grid-area: email;
+}
+
+.message{
+    grid-area: message;
+}
+
+/* --- flechas incremento - decremento ocultas ---- */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+fieldset input{
+    all: unset;
+    padding: 10px;
+    width: 400px;
+    border-bottom: 1px solid #999;
+    color: #999;
+    max-width: 18.75rem;
+}
+
+fieldset input:hover{
+    border-bottom: 1px solid #e2e2e2;
+    color: #e2e2e2;
+}
+
+fieldset{
+    color: transparent;
+    border: 2px solid #9999;
+    border-radius: 5px;
+    margin: 0.625rem 0;
+    padding: .3125rem;
+    color: #9999;
+}
+
+fieldset:hover{
+    border: 2px solid #e2e2e2;
+    border-radius: 5px;
+    color: #e2e2e2;
+}
+
+legend{
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+fieldset textarea{
+    margin: 10px;
+    width: 95%;
+    resize: none;
+    min-height: 12.5rem;
+    max-height: 18.75rem;
+    font-family: "Barlow", sans-serif;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #999;
+    padding: 2px 5px;
+}
+fieldset textarea:hover{
+    border: 2px solid #e2e2e2;
+    border-radius: 5px;
+    color: #e2e2e2;
+}
+
+.box-button{
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / -1;
+}
+.contact-form__button{
+    all: unset;
+    border-radius: 7px;
+    padding: 10px 18px;
+    background-color: #399D4F77;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #e2e2e2ee;
+}
+
+.contact-form__button:hover{
+    background-color: #399D4F;
+    box-shadow: 2px 0px 2px 0px #399D4F19;
+}
+
+.contact-information p, .contact-information h3{
+    margin: 10px 0;
+}
+
+/* ---------- MAPS STYLE ----------- */
+
+.main-location{
+    margin: 1rem;
+    color: #e2e2e2;
+    border-radius: .3125rem;
+    background-color: #232328;
+    padding: .625rem;
+}
+
+.location-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-section h2{
+    margin: 5px 0;
+}
+
+.aboutUs-p{
+    margin: 5px 0;
+}
+
+.box-map iframe{
+    margin: 1rem 2rem;
+    background-color: #49444b;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.contact-information__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25rem;
+}
+
+.contact-information__text{
+    text-align: left;
+}
+
+.contact-information__text p, .contact-information__text h3{
+    margin: 10px 0;
+}
+
+
+/* ------- FAQ´S STYLE --------- */
+
+.main-faq{
+    color: #000 ;
+    background-color: #232323;
+    margin: 2rem 1rem;
+    padding: 1rem .5rem;
+}
+
+.main-faq details{
+    background-color: #d9d9d9;
+    margin: 0rem 3rem;
+}
+.main-faq h2{
+    color: #e2e2e2;
+}
+
+.main-faq details summary{
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.main-faq details div{
+    border-top: 1px solid #000;
+}
+
+/* -------- FOOTER STYLE ----------- */
+
+footer{
+    background-color: #232328;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.footer-socialMedia li a{
+    color: #e2e2e2;
+}
+
+.footer-socialMedia li a:hover{
+    border-bottom: 2px solid #e2e2e2;
+}
+
+.footer-socialMedia li{
+    margin:20px 0;
+}
+
+
+footer p{
+    color: #494949;
+    display:flex;
+    align-items: end;
+}
+
+.footer-navbar li a{
+    color:#999;
+}
+
+.footer-navbar li a:hover{
+    border-bottom: 2px solid #49444b;
+}
+
+.footer-navbar li{
+    margin: 15px 0;
+    padding-left: 20px;
+}
+.footer-line{
+    border-left: 2px solid #49444b;
+}
+/* -------- < MEDIA QUERIES > --------- */
+
+
+/* ------- IPAD MINI SCREEN -------- */
+
+@media only screen and (max-width:768px){
+    
+    /* ------- INDEX STYLE -------*/
+    /* ------- MAIN -------*/
+    h1{
+        display: none;
+    }
+    .main-index{ 
+        max-width: 600px;
+        margin: auto;
+    }
+    .main-index section{
+        border-radius: 20px;
+    }
+    .main-index section .section__imgAboutUs{
+        border-radius: 100%;
+        width: 12.5rem;
+        height: 12.5rem;
+        transform: scale(.9);
+    }
+    .main-index .section-img__featured{
+        border-radius: 100%;
+        width: 14.625rem;
+        height: 12.5rem;
+        transform: scale(.85);
+    }
+    .main-index section h2{
+        letter-spacing: normal;
+        font-size: 1.5rem;
+    }
+    .main-index section p{
+        letter-spacing: normal;
+        font-size: 1rem;
+        text-align: center;
+        width: 240px;
+    }
+    .main-index .section-featuredCar{
+        padding: 30px 0;
+    }
+    .main-index .section-featuredCar div p{
+        margin: 5px 0;
+        text-align: center;
+    }
+    .main-index section .rent-button{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 7px 0;
+        letter-spacing: normal;
+    }
+    .main-index section .rent-button .rent-information{
+        border-top: 1px solid #9999;
+        padding-top: 10px;
+    }
+
+    .main-index section .rent-button button{
+        margin-top: 25px;
+    }
+
+    /* ------ CARS STYLE -------- */
+    /* ------ INDEX ------------*/
+    .main-cars{
+        margin: auto;
+    }
+    .main-cars h2{
+        margin: 10px;
+    }
+    .main-cars section{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;;
+    }
+    .main-cars section article{
+        width: 200px;
+        height: 400px;
+        margin: auto;
+    }
+    .main-cars section article div p{
+        font-size: 15px;
+    }
+
+    .main-cars section article div div{
+        margin: 10px 0;
+        padding: 5px 0;
+        border-top: 1px solid #999;
+    }
+
+    .car-card1 div button, .car-card2 div button, .car-card3 div button, .car-card4 div button, .car-card5 div button, .car-card6 div button, .car-card7 div button, .car-card8 div button{
+        margin-right: 10px;
+        padding: 5px;
+        margin: right;
+    }
+    .car-card1 div button a, .car-card2 div button a, .car-card3 div button a, .car-card4 div button a, .car-card5 div button a, .car-card6 div button a, .car-card7 div button a, .car-card8 div button a{
+        font-size: 12px;
+    }
+    .car-info{
+        font-size: 12px;
+    }
+
+
+    /* ------ CONTACT STYLE ---------*/
+    .main-contact{
+        margin:30px;
+    }
+
+    .box-container__contact{
+        margin: auto;
+        max-width: 31.25rem;
+    }
+    .main-contact .form-p{
+        max-width: 23.75rem;
+    }
+    .box-form{
+        padding: 0;
+    }
+    .contact-form{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 400px;
+    }
+    fieldset legend, fieldset input{
+        margin: auto;
+        max-width: 300px;
+        height: 1.125rem;
+    }
+    fieldset{
+        padding: 10px;
+    }
+    .message{
+        width: 320px;
+        height: 140px;
+    }
+    fieldset textarea{
+        width: 18.75rem;
+        min-height: 5.3125rem;
+    }
+    .contact-information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+    /* -------- LOCATION STYLE --------*/
+    .main-location{
+        margin: 30px auto;
+    }
+    iframe{
+        width: 430px;
+        height: 500px;
+        margin: auto;
+    }
+
+    .contact-information__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:auto;
+    }
+    .contact-information__text{
+        text-align: center;
+    }
+
+/* ------- IPHONE SE SCREEN ---------*/
+@media only screen and (max-width:480px){
+    /* ------- HEADER -------- */
+    .material-symbols-outlined{
+        display: block;
+        color: #e2e2e2;
+    }
+    .header-navbar{
+        display: none;
+        flex-direction:column;
+        position: absolute;
+        z-index: 10;
+        top: 7%;
+        left:0;
+        width: 100%;
+        background-color: #3d3a3e;
+    }
+    .header-navbar li {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #777;
+    }
+    #menu-toggle:checked ~ .header-navbar {
+        display: flex;
+    }
+    /* ------- INDEX STYLE -------*/
+    .main-index{
+        max-width: 600px;
+        margin: auto;
+    }
+    .main-index section{
+        margin: 30px;
+    }
+
+    .main-index .section-aboutUs p{
+        font-size: .75rem;
+        max-width: 9.375rem;
+    }
+
+    .main-index section .section__imgAboutUs{
+        transform: scale(.7);
+        margin: 0;
+    }
+    .main-index .section-featuredCar div{
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    .main-index section .section-img__featured {
+        width: 14rem;
+        height: 12.5rem;
+        transform: scale(.6);
+        margin: 0;
+    } 
+    .main-index .section-featuredCar .rent-button .rent-information{
+        margin-top: .625rem;
+        padding-top: 1.25rem;
+    }
+
+    /* ------- CARS STYLE -------*/
+    .main-cars{
+        max-width: 300px;
+        margin: 10px auto;
+    }
+    
+    .main-cars section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:20px;
+    }
+    .main-cars section article{
+        border-radius: 30px;
+    }
+
+    .main-cars section article h3{
+        font-size: .8125rem;
+    }
+
+    .main-cars section article div p{
+        font-size: .6875rem;
+    }
+
+    .main-cars section article div div{
+        border: none;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+        margin-top: .625rem;
+    }
+    
+    /* ------- CONTACT STYLE --------*/
+    .main-contact .box-container__contact{
+        max-width: 300px;
+    }
+    .form-tittle{
+        font-size: 24px;
+    }
+    .main-contact .form-p{
+        font-size: .8rem;
+        width: 250px;
+        margin: 5px 0;
+    }
+
+    .contact-form{
+        margin: auto;
+        max-width: 280px;
+    }
+    fieldset legen, fieldset input{
+        margin: auto;
+        width: 13.125rem;
+        height: 1.25rem;
+    }
+    .message{
+        width: 220px;
+    }
+    fieldset textarea{
+        width: 13.125rem;
+        height: 1.875rem;
+    }
+    .contact-information{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 10px;
+        margin-left: 0;
+    }
+
+
+    /* -------- LOCATION STYLE--------*/
+    .main-location{
+        margin:auto;
+    }
+    .main-location h2{
+        font-size: 19px;
+    }
+    .main-location p{
+        font-size: 12px;
+    }
+    iframe{
+        width: 300px;
+        height: 400px;
+    }
+    .contact-information__text p, .contact-information__text h3{
+        font-size: 12px;
+    }
+    /* ------ FOOTER ------- */
+    .footer-socialMedia{
+        display: grid;
+        grid-template-areas:
+            "instagram facebook"
+            "whatsapp emailFt";
+            grid-gap: 20px;
+            row-gap: 0;  
+        }
+    .instagram{
+        grid-area: instagram;
+    }
+    .facebook{
+        grid-area: facebook;
+    }
+    .whatsapp{
+        grid-area: whatsapp;
+    }
+    .email-ft{
+        grid-area: emailFt;
+    }
+    .footer-socialMedia a{
+        font-size: 12px;
+    }
+    .footer-navbar{    
+        font-size: .5rem;
+    }
+    footer p{
+        font-size: .4375rem;
+    }
+}
